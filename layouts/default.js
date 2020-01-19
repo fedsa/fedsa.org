@@ -427,7 +427,9 @@ select {
 }
   </style>
   <body>
-    $${content}
+    <div class="Layout">
+      $${content}
+    </div>
   </body>
   <script>
     const root = document.documentElement;
