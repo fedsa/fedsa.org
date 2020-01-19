@@ -1,0 +1,11 @@
+{
+  "name": "fedsa-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:fedsa/fedsa-website.git",
+  "author": "shailen <shailen@lumkani.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "hydrogen-cli": "^0.8.0"
+  }
+}
