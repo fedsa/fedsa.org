@@ -111,5 +111,6 @@ const page = () => html`
 `
 
 module.exports = {
+  title: 'FEDSA',
   page,
 }
