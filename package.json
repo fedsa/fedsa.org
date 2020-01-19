@@ -6,6 +6,7 @@
   "author": "shailen <shailen@lumkani.com>",
   "license": "MIT",
   "devDependencies": {
+    "html-template-tag": "^3.2.0",
     "hydrogen-cli": "^0.8.0"
   }
 }
