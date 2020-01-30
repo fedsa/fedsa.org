@@ -4,5 +4,11 @@
       "title": "🔎 What is FEDSA?",
       "body": "**Front-end Development South Africa is a registered non-profit organisation supporting the advancement of front-end development in South Africa.**\n\nWe are made up of diverse group of volunteers, providing their time and expertise, as well as a variety of sponsors that help cover operational costs. Our goal is to support both front-end developers (and other professionals working alongside front-end developers) to create a better web experience for all South Africans."
     }
+  ],
+  "middle_column": [
+    {
+      "title": "💪 How can I get involved?",
+      "body": "**From it's inception FEDSA was conceived as an community-driven project.**\n\nIf you are interested, we would love to have you join our team of part-time volunteers. All skill levels welcome!.\n\n[Visit the Member section to learn more.](https://fedsa.netlify.com/#)"
+    }
   ]
 }
