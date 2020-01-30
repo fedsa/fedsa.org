@@ -4,16 +4,31 @@ backend:
   branch: netlify-cms-setup
 media_folder: uploads
 collections:
-  - name: "homepage" # Used in routes, e.g., /admin/collections/blog
-    identifier_field: left_column
-    extension: json
-    label: "Homepage" # Used in the UI
-    folder: "public/data" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: homepage # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  # - name: "homepage" # Used in routes, e.g., /admin/collections/blog
+  #   identifier_field: left_column
+  #   extension: json
+  #   label: "Homepage" # Used in the UI
+  #   folder: "public/data" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: homepage # Filename template, e.g., YYYY-MM-DD-title.md
+  #   fields: # The fields for each document, usually in front matter
+  #     - name: left_column
+  #       label: left_column
+  #       widget: list
+  #       fields: 
+  #         - name: title
+  #           label: title
+  #           widget: string
+  #         - name: body
+  #           label: body
+  #           widget: markdown
+
+  - name: homepage
+    label: Homepage
+    file: public/data/homepage.json
+    fields:
       - name: left_column
-        label: left_column
+        label: Left Column
         widget: list
         fields: 
           - name: title
