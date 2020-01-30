@@ -4,6 +4,7 @@ backend:
 media_folder: uploads
 collections:
   - name: "homepage" # Used in routes, e.g., /admin/collections/blog
+    identifier_field: left_column
     extension: json
     label: "Homepage" # Used in the UI
     folder: "public/data" # The path to the folder where the documents are stored
