@@ -22,18 +22,20 @@ collections:
   #         - name: body
   #           label: body
   #           widget: markdown
-
-  - name: homepage
-    label: Homepage
-    file: public/data/homepage.json
-    fields:
-      - name: left_column
-        label: Left Column
-        widget: list
-        fields: 
-          - name: title
-            label: title
-            widget: string
-          - name: body
-            label: body
-            widget: markdown
+  - label: Pages
+    name: Pages
+    files:
+      - name: homepage
+        label: Homepage
+        file: public/data/homepage.json
+        fields:
+          - name: left_column
+            label: Left Column
+            widget: list
+            fields: 
+              - name: title
+                label: title
+                widget: string
+              - name: body
+                label: body
+                widget: markdown
