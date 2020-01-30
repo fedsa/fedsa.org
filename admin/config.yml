@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: fedsa/fedsa-website
+  branch: netlify-cms-setup
 media_folder: uploads
 collections:
   - name: "homepage" # Used in routes, e.g., /admin/collections/blog
