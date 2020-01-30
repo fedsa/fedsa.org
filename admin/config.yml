@@ -1,19 +1,22 @@
 backend:
   name: github
   repo: fedsa/fedsa-website
-  # branch: master
 media_folder: uploads
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+  - name: "homepage" # Used in routes, e.g., /admin/collections/blog
     extension: json
-    label: "Blog" # Used in the UI
-    folder: "_posts/blog" # The path to the folder where the documents are stored
+    label: "Homepage" # Used in the UI
+    folder: "public/data" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: data.json # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: homepage.json # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - name: left_column
+        label: left_column
+        widget: list
+        fields: 
+          - name: title
+            label: title
+            widget: string
+          - name: body
+            label: body
+            widget: markdown
