@@ -1,4 +1,13 @@
 const html = require('html-template-tag')
+const homepageData = require('../public/data/homepage.json')
+const md = require('markdown-it')()
+
+const Blurb = ({ title, body }) => html`
+  <div class="Blurb">
+    <h2 class="Blurb-title">${title}</h2>
+    $${md.render(body)}
+  </div>
+`
 
 const page = () => html`
   <header class="Layout-header">
@@ -59,52 +68,13 @@ const page = () => html`
   <main class="Layout-content">
     <div class="Layout-row">
       <div class="Layout-column">
-        <div class="Blurb">
-          <h2 class="Blurb-title"><span class="Blurb-icon">🔎&nbsp;</span><span>What is FEDSA?</span></h2>
-          <p><strong>Front-end Development South Africa is a registered non-profit organisation supporting the
-              advancement of front-end development in South Africa.</strong></p>
-          <p>We are made up of diverse group of volunteers, providing their time and expertise, as well as a variety of
-            sponsors that help cover operational costs. Our goal is to support both front-end developers (and other
-            professionals working alongside front-end developers) to create a better web experience for all South
-            Africans.</p>
-        </div>
-        <div class="Blurb">
-          <h2 class="Blurb-title"><span class="Blurb-icon">🤷‍&nbsp;</span><span>Why FEDSA?</span></h2>
-          <p><strong>FEDSA was established by a network of front-end developer communities in 2019.</strong></p>
-          <p>These communities have been active for a couple of years at the time and have seen the creation and death
-            of several HTML, CSS, JavaScript and design meetups or other community projects over this time. FEDSA was
-            established as an umbrella organisation to support meetups, conferences and/or open-source maintainers in
-            the South African front-end development space.</p>
-        </div>
+        ${homepageData.left_column.map(Blurb)}
       </div>
       <div class="Layout-column">
-        <div class="Blurb">
-          <h2 class="Blurb-title"><span class="Blurb-icon">💪&nbsp;</span><span>How can I get involved?</span></h2>
-          <p><strong>From it's inception FEDSA was conceived as an community-driven project. </strong></p>
-          <p>If you are interested, we would love to have you join our team of part-time volunteers. All skill levels
-            welcome!.</p>
-          <p><a href="#">Visit the Member section to learn more.</a></p>
-        </div>
-        <div class="Blurb">
-          <h2 class="Blurb-title"><span class="Blurb-icon">👍&nbsp;</span><span>Anything else I can do?</span></h2>
-          <p><strong>...</strong></p>
-          <p>...</p>
-        </div>
+        ${homepageData.middle_column.map(Blurb)}
       </div>
       <div class="Layout-column">
-        <div class="Blurb">
-          <h2 class="Blurb-title"><span class="Blurb-icon">🦄&nbsp;</span><span>Sponsors</span></h2>
-          <ul>
-            <li><a href="https://nml.co.za/" target="_blank">New Media Labs</a></li>
-          </ul>
-        </div>
-        <div class="Blurb">
-          <h2 class="Blurb-title"><span class="Blurb-icon">🎪&nbsp;</span><span>Events</span></h2>
-          <ul>
-            <li><a href="https://github.com/schalkventer" target="_blank">Front-end Conf 2020</a></li>
-            <li><a href="https://github.com/schalkventer" target="_blank">Cape Town Front-end Developers</a></li>
-          </ul>
-        </div>
+        ${homepageData.right_column.map(Blurb)}
       </div>
     </div>
   </main>
