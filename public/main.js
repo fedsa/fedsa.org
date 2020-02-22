@@ -2,7 +2,7 @@ const root = document.documentElement;
 const buttons = document.querySelectorAll('button');
 const supportsCssVar = CSS.supports('color', 'var(--test)');
 
-let dark = JSON.parse(localStorage.getItem('app')).dark || false
+let { dark = false } = JSON.parse(localStorage.getItem('app')) || {}
 
 const blurButtons = () => {
   Array.from(buttons).forEach(instance => instance.blur())
