@@ -1,5 +1,4 @@
 const html = require('html-template-tag')
-const homepageData = require('../public/data/homepage.json')
 const md = require('markdown-it')()
 
 const Blurb = ({ title, body }) => html`
@@ -66,16 +65,20 @@ const page = () => html`
     </div>
   </header>
   <main class="Layout-content">
-    <div class="Layout-row">
-      <div class="Layout-column">
-        ${homepageData.left_column.map(Blurb)}
-      </div>
-      <div class="Layout-column">
-        ${homepageData.middle_column.map(Blurb)}
-      </div>
-      <div class="Layout-column">
-        ${homepageData.right_column.map(Blurb)}
-      </div>
+    <div class="Layout-member">
+      <img  src="https://media-exp1.licdn.com/dms/image/C4D03AQGy-zPHoCnVwQ/profile-displayphoto-shrink_200_200/0?e=1587600000&v=beta&t=iIHNVJ2DeX5Z6_ZDgzDK0ya0NLMl6g_WRgIkBS6C6Es">
+      <h2>Schalk Venter</h2>
+      <p>Passionate about UI/UX development</p>
+    </div>
+    <div class="Layout-member">
+      <img  src="https://media-exp1.licdn.com/dms/image/C4E03AQFeR74Umw2L1A/profile-displayphoto-shrink_200_200/0?e=1587600000&v=beta&t=GbIh7_4TPofrMN7kBBTe7o9TIA0rTnom_c5GyXHpttw">
+      <h2>Justin Slack</h2>
+      <p>Passionate about UI/UX development</p>
+    </div>
+    <div class="Layout-member">
+      <img  src="https://media-exp1.licdn.com/dms/image/C4E03AQEPcCxyfhGgxA/profile-displayphoto-shrink_200_200/0?e=1587600000&v=beta&t=pf3v_pOrv7-s5R47vVyo9fSU2elgRChR0il6exkr-kM">
+      <h2>Shailen Naidoo</h2>
+      <p>Passionate about JavaScript</p>
     </div>
   </main>
 `
