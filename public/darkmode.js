@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
+  const root = document.documentElement;
   const buttons = document.querySelectorAll('button');
 
   let { dark = false } = JSON.parse(localStorage.getItem('app')) || {}
