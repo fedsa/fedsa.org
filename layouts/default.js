@@ -1,10 +1,10 @@
 const html = require('html-template-tag')
 
-module.exports = ({ title, content }) => html `
+module.exports = ({ content, head }) => html `
   <!DOCTYPE html>
   <html>
     <head>
-      <title>${title}</title>
+      $${head}
       <link rel="stylesheet" href="/public/main.css">
       <script src="/public/darkmode.js"></script>
     </head>

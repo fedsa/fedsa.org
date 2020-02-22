@@ -79,4 +79,7 @@ const page = () => html`
 module.exports = {
   title: 'FEDSA',
   page,
+  head: ({ config }) => [
+    ['title', {}, `Members | ${config.name}`]
+  ]
 }
