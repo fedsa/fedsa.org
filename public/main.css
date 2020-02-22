@@ -321,65 +321,11 @@ body {
     line-height: 26px;
 }
 
-
-/* a,
-  button {
-    color: var(--text);
-    display: inline-block;
-  }
-
-  button:focus,
-  button:hover,
-  a:focus,
-  a:hover {
-    background: var(--accent);
-    border-radius: 4px;
-    margin: -0.25rem;
-    padding: 0.25rem;
-    outline: none;
-  } */
-
-
-/* .tagline {
-    margin: 0;
-    font-size: 2rem;
-    opacity: 0.5;
-    letter-spacing: 2px;
-  } */
-
-
-/* .notice {
-    display: none;
-    border: 1px solid var(--accent);
-    padding: 1rem;
-    border-radius: 4px;
-    margin-top: 2rem;
-    box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
-  } */
-
-
-/* 
-  li {
-
-  }
-
-  .logo {
-  cursor: pointer;
-    color: var(--base);
-    text-decoration: none;
-    display: block;
-  }
-
-  .logo:hover {
-    background: none;
-  }
-  */
-
 button {
     display: inline-block;
     cursor: pointer;
     background: none;
-    font-family: Roboto, Arial, Helvetical, sans-serif;
+    font-family: Muli, Arial, Helvetical, sans-serif;
     font-size: 16px;
     padding: 0;
     border: 0;
@@ -436,4 +382,8 @@ select {
 
 .Layout-member > p  {
     
+}
+
+.active-link {
+    font-weight: bold;
 }

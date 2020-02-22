@@ -1,4 +1,5 @@
 const html = require('html-template-tag')
+const { Menu } = require('../../components')
 const md = require('markdown-it')()
 
 const Blurb = ({ title, body }) => html`
@@ -44,15 +45,7 @@ const page = () => html`
       <h1 class="Logo-text">FEDSA</h1>
     </div>
     <div class="Menu">
-      <nav class="Menu-list">
-        <div class="Menu-box"><a class="Menu-link" href="/"><strong>About</strong></a><span
-            style="padding: 0 6px;">&nbsp;|&nbsp;</span><a class="Menu-link" href="#">Constitution</a><span
-            style="padding: 0 6px;">&nbsp;|&nbsp;</span><a class="Menu-link" href="#">Projects</a><span
-            style="padding: 0 6px;">&nbsp;|&nbsp;</span><a class="Menu-link" href="/members">Members</a><span
-            style="padding: 0 6px;">&nbsp;|&nbsp;</span>
-          <button class="Menu-link" href="#">Toggle Dark Mode</button>
-        </div>
-      </nav>
+      $${Menu()}
       <div class="Menu-list Menu-list--mobile">
         <select>
           <option disabled="disabled" selected="selected">Change page</option>

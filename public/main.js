@@ -40,3 +40,16 @@ if (supportsCssVar) {
     instance.addEventListener('click', toggleTheme);
   });
 }
+
+const menuMap = new Map([
+  ['/', document.querySelector('a[href="/"]')],
+  ['/constitution/', document.querySelector('a[href="/constitution"]')],
+  ['/projects/', document.querySelector('a[href="/projects"]')],
+  ['/members/', document.querySelector('a[href="/members"]')]
+])
+
+for (const [href, el] of menuMap) {
+  if (location.pathname === href) {
+    el.classList.add('active-link')
+  }
+}
