@@ -6,6 +6,7 @@ module.exports = ({ title, content }) => html `
     <head>
       <title>${title}</title>
       <link rel="stylesheet" href="/public/main.css">
+      <script src="/public/darkmode.js"></script>
     </head>
     <body>
       <div class="Layout">
