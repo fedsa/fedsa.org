@@ -1,1 +1,9 @@
-{}
+{
+  "members": [
+    {
+      "full_name": "Shailen Naidoo",
+      "biography": "Passionate about JavaScript",
+      "image": "/uploads/0.jpeg"
+    }
+  ]
+}
