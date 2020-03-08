@@ -45,12 +45,16 @@ collections:
         label: Members
         file: public/data/members.json
         fields:
-          - name: image
-            label: Image
-            widget: image
-          - name: full_name
-            label: Full name
-            widget: string
-          - name: biography
-            label: Biography
-            widget: text
+          - name: members
+            label: Members
+            widget: list
+            fields: 
+              - name: image
+                label: Image
+                widget: image
+              - name: full_name
+                label: Full name
+                widget: string
+              - name: biography
+                label: Biography
+                widget: text
