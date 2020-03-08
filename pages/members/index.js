@@ -60,7 +60,7 @@ const page = () => html`
     </div>
   </header>
   <main class="Layout-content">
-    $${members.map(({ image, full_name, biography }) => html`
+    ${members.map(({ image, full_name, biography }) => html`
       <div class="Layout-member">
         <img src="${image}">
         <h2>${full_name}</h2>
