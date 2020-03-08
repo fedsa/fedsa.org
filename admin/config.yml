@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: fedsa/fedsa-website
-  branch: netlify-cms-setup
+  branch: master
 media_folder: uploads
 collections:
   - label: Pages
