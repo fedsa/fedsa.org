@@ -1,6 +1,16 @@
 {
   "members": [
     {
+      "full_name": "Schalk Venter",
+      "image": "/uploads/0-2-.jpeg",
+      "biography": "Passionate about UI/UX development"
+    },
+    {
+      "full_name": "Justin Slack",
+      "image": "/uploads/0-1-.jpeg",
+      "biography": "Passionate about UI/UX development"
+    },
+    {
       "full_name": "Shailen Naidoo",
       "biography": "Passionate about JavaScript",
       "image": "/public/images/0.jpeg"
