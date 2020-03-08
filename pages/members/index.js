@@ -2,6 +2,8 @@ const html = require('html-template-tag')
 const { Menu } = require('../../components')
 const md = require('markdown-it')()
 
+const { members } = require('../../public/data/members.json')
+
 const Blurb = ({ title, body }) => html`
   <div class="Blurb">
     <h2 class="Blurb-title">${title}</h2>
@@ -58,7 +60,14 @@ const page = () => html`
     </div>
   </header>
   <main class="Layout-content">
-    <div class="Layout-member">
+    $${members.map(({ image, full_name, biography }) => html`
+      <div class="Layout-member">
+        <img src="${image}">
+        <h2>${full_name}</h2>
+        <p>${biography}</p>
+      </div>
+    `)}
+    <!-- <div class="Layout-member">
       <img  src="https://media-exp1.licdn.com/dms/image/C4D03AQGy-zPHoCnVwQ/profile-displayphoto-shrink_200_200/0?e=1587600000&v=beta&t=iIHNVJ2DeX5Z6_ZDgzDK0ya0NLMl6g_WRgIkBS6C6Es">
       <h2>Schalk Venter</h2>
       <p>Passionate about UI/UX development</p>
@@ -72,7 +81,7 @@ const page = () => html`
       <img  src="https://media-exp1.licdn.com/dms/image/C4E03AQEPcCxyfhGgxA/profile-displayphoto-shrink_200_200/0?e=1587600000&v=beta&t=pf3v_pOrv7-s5R47vVyo9fSU2elgRChR0il6exkr-kM">
       <h2>Shailen Naidoo</h2>
       <p>Passionate about JavaScript</p>
-    </div>
+    </div> -->
   </main>
 `
 

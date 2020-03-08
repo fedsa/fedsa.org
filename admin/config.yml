@@ -2,7 +2,7 @@ backend:
   name: github
   repo: fedsa/fedsa-website
   branch: master
-media_folder: uploads
+media_folder: public/images
 collections:
   - label: Pages
     name: Pages
