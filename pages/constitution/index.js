@@ -1,4 +1,7 @@
 const html = require('html-template-tag')
+const md = require('markdown-it')()
+
+const { text } = require('../../public/data/constitution.json')
 
 const { Menu } = require('../../components')
 
@@ -52,7 +55,7 @@ const page = () => html`
   </header>
   <main class="Layout-content">
     <div class="Layout-row Smaller-width">
-      <p>These communities have been active for a couple of years at the time and have seen the creation and death of several HTML, CSS, JavaScript and design meetups or other community projects over this time. FEDSA was established as an umbrella organisation to support meetups, conferences and/or open-source maintainers in the South African front-end development space.</p>
+      $${md.render(text)}
     </div>
   </main>
 `
