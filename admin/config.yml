@@ -58,3 +58,10 @@ collections:
               - name: biography
                 label: Biography
                 widget: text
+      - name: constitution
+        label: Constitution
+        file: public/data/constitution.json
+        fields: 
+          - name: text
+            label: Text
+            widget: markdown
