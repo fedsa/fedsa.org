@@ -4,7 +4,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   let { dark = false } = JSON.parse(localStorage.getItem('app')) || {}
 
-
   if (dark) {
     root.style.setProperty('--background', '#121212');
     root.style.setProperty('--base', 'white');
