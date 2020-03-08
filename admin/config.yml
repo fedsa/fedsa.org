@@ -49,12 +49,12 @@ collections:
             label: Members
             widget: list
             fields: 
-              - name: image
-                label: Image
-                widget: image
               - name: full_name
                 label: Full name
                 widget: string
+              - name: image
+                label: Image
+                widget: image
               - name: biography
                 label: Biography
                 widget: text
