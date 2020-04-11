@@ -15,4 +15,7 @@ const page = () => html`
 
 module.exports = {
   page,
+  head: () => [
+    ['title', {}, `Constitution | ${config.name}`],
+  ]
 }
