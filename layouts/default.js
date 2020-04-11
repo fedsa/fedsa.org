@@ -7,7 +7,7 @@ module.exports = ({ content, head }) => html `
   <html>
     <head>
       $${head}
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
       <link rel="stylesheet" href="/public/main.css">
       <script src="/public/darkmode.js"></script>
     </head>
