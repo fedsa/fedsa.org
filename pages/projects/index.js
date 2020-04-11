@@ -47,6 +47,9 @@ const page = () =>  html`
 module.exports = {
   page,
   head: ({ config }) => [
-    ['title', {}, config.name]
+    ['title', {}, `Projects | ${config.name}`],
+    ['meta', { name: 'description', content: 'The projects that FEDSA helps organize' }],
+    ['meta', { property: 'og:description', content: 'The projects that FEDSA helps organize' }],
+    ['meta', { property: 'og:title', content: `Projects | ${config.name}` }],
   ]
 }
