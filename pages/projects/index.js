@@ -1,28 +1,17 @@
 const html = require('html-template-tag')
+const { projects } = require('../../public/data/projects.json')
+
+const ProjectCard = ({ title, description, link = false }) => html`
+  <a class="card" ${link ? `href=${link}` : ''}>
+    <h2>${title}</h2>
+    <p>${description}</p>
+  </a>
+`
 
 const page = () =>  html`
   <main class="Layout-content">
     <div class="Layout-row Smaller-width">
-      <a class="card" href="https://google.co.za">
-        <h2>FrontendConf 2019</h2>
-        <p>The first major Frontend Conference in South Africa. FEDSA will be organizing this one</p>
-      </a>
-      <a class="card">
-        <h2>CTFEDS Meetups</h2>
-        <p>FEDSA is the organizer of the Cape Town Frontend Developers Meetup</p>
-      </a>
-      <a class="card">
-        <h2>CTFEDS Meetups</h2>
-        <p>FEDSA is the organizer of the Cape Town Frontend Developers Meetup</p>
-      </a>
-      <a class="card">
-        <h2>FrontendConf 2019</h2>
-        <p>The first major Frontend Conference in South Africa. FEDSA will be organizing this one</p>
-      </a>
-      <a class="card">
-        <h2>CTFEDS Meetups</h2>
-        <p>FEDSA is the organizer of the Cape Town Frontend Developers Meetup</p>
-      </a>
+      ${projects.map(ProjectCard)}
     </div>
     <style>
       .card {
