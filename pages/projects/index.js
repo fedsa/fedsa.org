@@ -49,6 +49,7 @@ module.exports = {
   head: ({ config }) => [
     ['title', {}, `Projects | ${config.name}`],
     ['meta', { name: 'description', content: 'The projects that FEDSA helps organize' }],
+    ['meta', { name: 'title', content: `Projects | ${config.name}` }],
     ['meta', { property: 'og:description', content: 'The projects that FEDSA helps organize' }],
     ['meta', { property: 'og:title', content: `Projects | ${config.name}` }],
   ]
