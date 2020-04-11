@@ -389,3 +389,30 @@ select {
 .active-link {
     font-weight: bold;
 }
+
+.Card {
+    padding: 5px 20px 10px 20px;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    width: 100%;
+    margin: 7px 0px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--base)
+}
+
+.Card:nth-child(3n+1) {
+    border-left: 3px solid #ecb31e;
+}
+
+.Card:nth-child(3n+2) {
+    border-left: 3px solid #105ea9;
+}
+
+.Card:nth-child(3n+3) {
+    border-left: 3px solid #eb5022;
+}
+
+.Card:hover {
+    box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px;
+}
