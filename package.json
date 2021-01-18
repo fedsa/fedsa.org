@@ -1,7 +1,7 @@
 {
   "name": "fedsa-website",
   "scripts": {
-    "start": "browser-sync src --watch"
+    "start": "browser-sync public --watch"
   },
   "license": "MIT",
   "devDependencies": {

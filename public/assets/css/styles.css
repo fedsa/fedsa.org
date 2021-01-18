@@ -59,7 +59,12 @@ body {
 
 /* Layout */
 
-@media screen and (min-width: 900px) {
+.layout {
+  max-width: 115rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 55rem) {
   .layout {
     padding: 5rem 3rem;
   }
@@ -297,6 +302,7 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
+  background: #EEE;
 }
 
 .contributors__image:hover {
