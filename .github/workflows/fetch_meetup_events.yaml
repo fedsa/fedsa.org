@@ -14,3 +14,5 @@ jobs:
         git config --global user.name "GitHub Action (Jordan Hailey)"
         git config --global user.email "jordan.m.hailey@gmail.com"
         npm run fetch:meetup
+        git add public/assets/meetup.json
+        git commit -m "🤖 meetup api update"
