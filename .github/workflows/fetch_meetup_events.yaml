@@ -1,0 +1,16 @@
+name: fetch_meetup_events
+
+on:
+  schedule:
+    - cron: "0 0,12 * * *" # Triggers the workflow to run twice daily at 12am and 12pm UTC
+
+jobs:
+  fetch_meetup_events:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - shell: bash
+      run: |
+        git config --global user.name "GitHub Action (Jordan Hailey)"
+        git config --global user.email "jordan.m.hailey@gmail.com"
+        npm run fetch:meetup
