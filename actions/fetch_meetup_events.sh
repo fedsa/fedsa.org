@@ -13,5 +13,5 @@ Please change directories to the FEDSA website root directory and try again.
 exit 1
 fi
 
-curl -X GET "https://api.meetup.com/fedsa-community/events?scroll=future_or_past&fields=featured_photo,answers" -o public/assets/meetup.json
+curl -X GET "https://api.meetup.com/fedsa-community/events?scroll=future_or_past&fields=featured_photo,answers,photo_album" -o public/assets/meetup.json
 echo "public/assets/meetup.json updated"
