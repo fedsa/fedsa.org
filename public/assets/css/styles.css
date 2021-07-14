@@ -444,3 +444,12 @@ body {
 .table__cell_header {
   background: #EEE;
 }
+
+.skip__link__container {
+  position: absolute;
+  top: 0;
+  right: 100%;
+}
+.skip__link__container:focus-within {
+   transform: translateX(100%);
+}
