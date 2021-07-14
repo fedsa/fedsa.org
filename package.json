@@ -1,8 +1,9 @@
 {
   "name": "fedsa-website",
   "scripts": {
-    "start": "browser-sync public --watch",
-    "fetch:meetup": "actions/fetch_meetup_events.sh"
+    "dev": "browser-sync public --watch",
+    "fetch:meetup": "actions/fetch_meetup_events.sh",
+    "start": "npm run fetch:meetup && npm run dev"
   },
   "license": "MIT",
   "devDependencies": {
