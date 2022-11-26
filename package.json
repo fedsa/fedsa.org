@@ -5,8 +5,7 @@
     "start": "netlify dev public",
     "astro": "astro build"
   },
-  "dependencies": {
-    "astro": "^1.6.11",
+  "devDependencies": {
     "netlify-cli": "^12.2.7",
     "puppeteer": "^19.3.0"
   }
