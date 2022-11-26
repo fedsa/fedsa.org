@@ -1,7 +1,11 @@
-const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-core");
+const chromium = require("chrome-aws-lambda");
 
-exports.handler = async function (event, context) {
-  const browser = await puppeteer.launch({ headless: false });
+exports.handler = async function () {
+  const browser = await puppeteer.launch({
+    executablePath: await chromium.executablePath,
+  });
+
   const page = await browser.newPage();
   await page.goto("https://www.meetup.com/fedsa-community/events/");
 
