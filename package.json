@@ -6,6 +6,7 @@
     "astro": "astro build"
   },
   "dependencies": {
+    "puppeteer": "^19.3.0",
     "puppeteer-core": "^19.3.0"
   }
 }
