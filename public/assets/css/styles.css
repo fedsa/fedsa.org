@@ -55,6 +55,7 @@ body {
   text-rendering: optimizelegibility;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   padding: 3rem 1rem;
+  overflow-x: hidden;
 }
 
 /* Layout */
@@ -415,7 +416,7 @@ body {
 .table__cell {
   display: block;
   font-weight: bold;
-  border-bottom: 1px solid #CCC; 
+  border-bottom: 1px solid #CCC;
   padding: 1rem 2rem;
   background: white;
 }
